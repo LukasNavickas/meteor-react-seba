@@ -1,0 +1,7 @@
+import { Meteor } from 'meteor/meteor';
+import { Template } from 'meteor/templating';
+import { ReactiveDict } from 'meteor/reactive-dict';
+import { materialize } from 'meteor/materialize:materialize';
+
+import './body.html';
+import './navbar.html';
