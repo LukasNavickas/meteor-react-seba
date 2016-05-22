@@ -1,4 +1,7 @@
 <template name="home">
+  
+  {{> login}}
+  
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -19,11 +22,7 @@
   <div class="container">
     <div class="section">
         
-        {{#if currentUser}}
-        <form class="new-task">
-          <input type="text" name="text" placeholder="Type to add new tasks" />
-        </form>
-  {{/if}}
+
 
       <!--   Icon Section   -->
       <div class="row">

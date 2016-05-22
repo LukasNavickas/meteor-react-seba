@@ -1,0 +1,66 @@
+<template name="login">
+    {{#if currentUser}}
+        <div class="panel panel-default panel-login">
+            <div class="panel-heading">
+                <h5 class="panel-titile">Welcome Back</h5>
+            </div>
+            <div class="panel-body">
+                {{userEmail}}
+                <hr>
+                <form class="logout-form">
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
+            </div>
+        </div>
+    {{else}}
+        <div class="panel panel-default panel-login">
+            <div class="panel-heading">
+                <h5 class="panel-titile">Customer Login</h5>
+            </div>
+            <div class="panel-body">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                    
+                    <a href="#" class="register-link">Create An Account</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="panel panel-default panel-register">
+            <div class="panel-heading">
+                <h5 class="panel-titile">Customer Register</h5>
+            </div>
+            <div class="panel-body">
+                <form class="register-form">
+                    <div class="form-group">
+                        <label for="emailReg">Email address</label>
+                        <input type="text" class="form-control" id="emailReg" name="emailReg" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordReg">Password</label>
+                        <input type="password" class="form-control" id="passwordReg" name="passwordReg" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordReg2">Password Confirm</label>
+                        <input type="password" class="form-control" id="passwordReg2" name="passwordReg2" placeholder="Password Confirm">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                    
+                    <a href="#" class="login-link">Log In</a>
+                </form>
+            </div>
+        </div>
+    {{/if}}
+</template>

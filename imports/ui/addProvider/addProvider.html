@@ -1,0 +1,78 @@
+<template name="addProvider">
+    
+    <div class="row">
+    
+    <form class="col s12 add-provider">
+        
+                    
+                      <div class="row">
+                        <div class="input-field col s12">
+                            
+                            <label for="name">Company's name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                            
+                            
+                        </div>
+                      </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="email">Email adress</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="phone">Phone number</label>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="+49...">
+                        </div>
+                    </div>
+                        
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                        </div>
+                    </div>
+                        
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                            </div>
+                        </div>
+
+                      <div class="row">
+                        <div class="input-field col s12">
+                            
+                            <select name="category" id="category">
+                            <option value="location">Location</option>
+                            <option value="entertainment">Entertainment</option>
+                            <option value="catering">Catering</option>
+                            </select>  
+                            <label>Category</label>                         
+                        </div>
+                      </div>
+                        
+                      <div class="row">  
+                        <div class="input-field col s12">
+                            <label for="price">Average price per person for your service (€)</label>
+                            <input type="text" class="form-control" id="price" name="price" placeholder="Price">
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="message" class="materialize-textarea"></textarea>
+                            <label for="message">Textarea</label>
+                        </div>
+                      </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        
+                   
+
+                    </form>
+           </div>
+</template>

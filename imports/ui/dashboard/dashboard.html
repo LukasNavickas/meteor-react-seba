@@ -4,6 +4,17 @@
       <h1>My Meetups</h1>
     </div>
     
+        
+        
+        {{#if isCreateEvent}}
+        <h2>Add new event</h2>
+          <form class="new-event">
+          <input type="text" name="text" placeholder="What is the name of your event?" />
+        </form>
+        {{/if}}
+
+    
+    
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
                 <br><br>
@@ -20,7 +31,7 @@
         
         
         <li>
-          <h2><a href="{{_id}}">{{name}}</a></h2>
+          <h2><a href="/event/{{_id}}">{{name}}</a></h2>
           <span></span>
           
         </li>
@@ -31,4 +42,5 @@
     </ul>
 
   </div>
+  
 </template>
